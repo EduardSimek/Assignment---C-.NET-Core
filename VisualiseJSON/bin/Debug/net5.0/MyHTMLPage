@@ -1,0 +1,17 @@
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>HTML Page with Imported JSON</title>
+                <script src="data.json"></script>
+            </head>
+            <body>
+                <h1>HTML Page with Imported JSON</h1>
+                <p>JSON data has been imported.</p>
+                <script>
+                    // Access and use the imported JSON data
+                    console.log(jsonData)
+                </script>
+            </body>
+            </html>
+        

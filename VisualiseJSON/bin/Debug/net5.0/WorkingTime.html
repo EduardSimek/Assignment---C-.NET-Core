@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Employee Working Time</title>
+<style>
+.highlight { background-color: yellow; }
+</style>
+</head>
+<body>
+<table>
+<tr class='highlight'>
+<td>Employee Name: </td>
+<td>Total Working Time: 30:25</td>
+<td>Working Time Percentage: 1,83%</td>
+</tr>
+<tr class='highlight'>
+<td>Employee Name: Tamoy Smith</td>
+<td>Total Working Time: 90:54</td>
+<td>Working Time Percentage: 5,46%</td>
+</tr>
+<tr class='highlight'>
+<td>Employee Name: Raju Sunuwar</td>
+<td>Total Working Time: 98:53</td>
+<td>Working Time Percentage: 5,94%</td>
+</tr>
+<tr>
+<td>Employee Name: Rita Alley</td>
+<td>Total Working Time: 113:36</td>
+<td>Working Time Percentage: 6,82%</td>
+</tr>
+<tr>
+<td>Employee Name: Kavvay Verma</td>
+<td>Total Working Time: 163:29</td>
+<td>Working Time Percentage: 9,81%</td>
+</tr>
+<tr>
+<td>Employee Name: Tim Perkinson</td>
+<td>Total Working Time: 170:49</td>
+<td>Working Time Percentage: 10,25%</td>
+</tr>
+<tr>
+<td>Employee Name: Mary Poppins</td>
+<td>Total Working Time: 173:36</td>
+<td>Working Time Percentage: 10,42%</td>
+</tr>
+<tr>
+<td>Employee Name: Abhay Singh</td>
+<td>Total Working Time: 197:25</td>
+<td>Working Time Percentage: 11,85%</td>
+</tr>
+<tr>
+<td>Employee Name: John Black</td>
+<td>Total Working Time: 202:37</td>
+<td>Working Time Percentage: 12,16%</td>
+</tr>
+<tr>
+<td>Employee Name: Stewart Malachi</td>
+<td>Total Working Time: 206:38</td>
+<td>Working Time Percentage: 12,40%</td>
+</tr>
+<tr>
+<td>Employee Name: Patrick Huthinson</td>
+<td>Total Working Time: 217:28</td>
+<td>Working Time Percentage: 13,05%</td>
+</tr>
+<td colspan='2'>Total Working Time of all employees: 1665:50</td>
+</tr>
+</table>
+<script>
+function sortTable(ascending) {
+    var table = document.querySelector('table');
+    var rows = Array.from(table.querySelectorAll('tr'));
+    rows.shift();
+    rows.sort(function(a, b) {
+        var aValue = a.querySelector('td:last-child').textContent;
+        var bValue = b.querySelector('td:last-child').textContent;
+        if (ascending) {
+            return aValue.localeCompare(bValue);
+        } else {
+            return bValue.localeCompare(aValue);
+        }
+    });
+    rows.forEach(function(row) {
+        table.appendChild(row);
+    });
+}
+</script>
+</body>
+</html>
