@@ -12,6 +12,8 @@ namespace VisualiseJSON
         static DateTime endTime { get; set; }
         static TimeSpan totalWorkingTime { get; set; }
 
+        
+
 
     }
     

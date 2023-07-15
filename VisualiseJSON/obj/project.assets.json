@@ -1043,11 +1043,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Eduard Šimek\\Desktop\\Assignment\\VisualiseJSON\\VisualiseJSON.csproj",
+      "projectUniqueName": "C:\\Users\\Eduard Šimek\\Desktop\\Assignment - mozes menit\\VisualiseJSON\\VisualiseJSON.csproj",
       "projectName": "VisualiseJSON",
-      "projectPath": "C:\\Users\\Eduard Šimek\\Desktop\\Assignment\\VisualiseJSON\\VisualiseJSON.csproj",
+      "projectPath": "C:\\Users\\Eduard Šimek\\Desktop\\Assignment - mozes menit\\VisualiseJSON\\VisualiseJSON.csproj",
       "packagesPath": "C:\\Users\\Eduard Šimek\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Eduard Šimek\\Desktop\\Assignment\\VisualiseJSON\\obj\\",
+      "outputPath": "C:\\Users\\Eduard Šimek\\Desktop\\Assignment - mozes menit\\VisualiseJSON\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

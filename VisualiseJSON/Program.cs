@@ -9,26 +9,21 @@ using System.Threading.Tasks;
 
 namespace VisualiseJSON
 {
+    
     public class Program : AnotherMethods, IGlobalVariables
     {
-        private static string uRL = "https://rc-vault-fap-live-1.azurewebsites.net/api/gettimeentries?code=vO17RnE8vuzXzPJo5eaLLjXjmRW07law99QTD90zat9FfOQJKKUcgQ==";
-
-        public static string URL { get => uRL; set => uRL = value; }
-
         public static async Task Main (string[] args)
         {
-            await sortInformation();
+            await sortInformation(new DefaultHTTPClientFactory());
         }
      
-        public static async Task sortInformation()
+        public static async Task sortInformation(HTTPClientFactoryPattern httpClientFactoryPattern)
         {
             try
-            {
-                
-
+            {           
                 using (HttpClient client = new HttpClient())
                 {
-                    HttpResponseMessage responseMsg = await client.GetAsync(URL);
+                    HttpResponseMessage responseMsg = await client.GetAsync(AnotherMethods._URL);
 
                     if (responseMsg.IsSuccessStatusCode)
                     {
@@ -94,20 +89,29 @@ namespace VisualiseJSON
                             FileName = htmlFile,
                             UseShellExecute = true
                         });
-                        _ErrorHandlings.SuccessMsg(responseMsg);
+                        HTTPSuccessMsg.SuccessMsg(responseMsg);
                     }
                     else
                     {
-                        _ErrorHandlings.HTTPErMsg(responseMsg);
+                        HTTPErMsg.ErrorMsg(responseMsg);
                     }
                 }
             }
-            catch (Exception ex)
+            catch (Exception exception)
             {
-                _ErrorHandlings.CommonErMsg(ex);
+                CommonErMsg.ErrException(exception);
             }
         }                 
     }
 
 
 }
+
+
+
+
+
+
+
+
+

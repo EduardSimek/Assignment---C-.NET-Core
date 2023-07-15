@@ -3,21 +3,31 @@ using System.Net.Http;
 
 namespace VisualiseJSON
 {
-    public class _ErrorHandlings
+    public class CommonErMsg
     {
-        public static void CommonErMsg(Exception ex)
+        public static void ErrException(Exception exception)
         {
-            Console.WriteLine($"An error occurred: {ex.Message}");
+            Console.WriteLine($"An error occurred: {exception.Message}");
         }
-        public static void HTTPErMsg(HttpResponseMessage responseMsg)
-        {
-            Console.WriteLine("Request failed with status code: " + responseMsg.StatusCode);
-        }
+    }
 
+    public class HTTPErMsg
+    {
+        public static void ErrorMsg(HttpResponseMessage responseMsg)
+        {
+            Console.WriteLine("Request failed with status code: " + (int)responseMsg.StatusCode);
+        }
+    }
+
+    public class HTTPSuccessMsg
+    {
         public static void SuccessMsg(HttpResponseMessage responseMsg)
         {
-            Console.WriteLine($"Request was successed with status code: {responseMsg.StatusCode}");
+            Console.WriteLine($"Request was successed with status code: {(int)responseMsg.StatusCode}");
             Console.WriteLine("HTML page opened in the default web browser.");
         }
     }
+    
+
 }
+

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i6r+9oOMHv3Jt2LHa20CoSAVKZFAcYfb+SE8bSFlqvjwvW/a9H9IuvYwgEbEyoteJmhZ66KonNaMHhInjpan9Q==",
+  "dgSpecHash": "3EpiMgIHetHvV3h/vRCsV34xtC0P1QJ1lsI7QGlQL2m2RSQwiS2amHTcrSV2rGX6xLn0ewjyY5JmMsQ3FpTgRw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Eduard Šimek\\Desktop\\Assignment\\VisualiseJSON\\VisualiseJSON.csproj",
+  "projectFilePath": "C:\\Users\\Eduard Šimek\\Desktop\\Assignment - mozes menit\\VisualiseJSON\\VisualiseJSON.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.webutilities\\2.2.0\\microsoft.aspnetcore.webutilities.2.2.0.nupkg.sha512",
     "C:\\Users\\Eduard Šimek\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
